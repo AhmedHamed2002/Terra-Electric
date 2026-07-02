@@ -19,13 +19,20 @@ Terra_Electric/
 │       └── images/          # Banner, photos, logo, founder image
 ├── src/
 │   ├── app/                 # Next.js App Router pages & layout
-│   │   ├── about-us/
-│   │   ├── contact-us/
-│   │   ├── not-found/
-│   │   ├── layout.tsx
-│   │   ├── page.tsx         # Home page (composes all sections)
-│   │   └── globals.css
+│   │   ├── about-us/        # About Us page
+│   │   ├── contact-us/      # Contact Us page
+│   │   ├── faq/             # FAQ page
+│   │   ├── not-found/       # Custom 404 page
+│   │   ├── services/        # Services page
+│   │   ├── spinner/         # Loading spinner assets
+│   │   ├── globals.css      # Global styles
+│   │   ├── layout.tsx       # Root layout
+│   │   ├── loading.tsx      # Loading UI
+│   │   └── page.tsx         # Home page
 │   ├── components/
+│   │   ├── about/           # About Us components (Hero, FounderJourney, etc.)
+│   │   ├── contact-us/      # Contact Us components
+│   │   ├── faq/             # FAQ components
 │   │   ├── home/            # Landing page section components
 │   │   │   ├── Hero.tsx
 │   │   │   ├── Features.tsx
@@ -33,9 +40,9 @@ Terra_Electric/
 │   │   │   ├── Brands.tsx
 │   │   │   ├── LatestFromField.tsx
 │   │   │   ├── MeetFounder.tsx
-│   │   │   ├── CTA.tsx
-│   │   │   └── Footer.tsx
-│   │   ├── shared/          # Shared layout components (e.g., footer.tsx)
+│   │   │   └── CTA.tsx
+│   │   ├── services/        # Services components
+│   │   ├── shared/          # Shared layout components (e.g., Footer)
 │   │   └── ui/              # Reusable primitive components (Navbar, Button, Sheet…)
 │   ├── hooks/               # Custom React hooks
 │   └── lib/                 # Shared utility functions
@@ -43,18 +50,16 @@ Terra_Electric/
 
 ---
 
-## 3. Page Sections (Home)
+## 3. Page Sections
 
-| Component | Description |
+| Page | Description |
 |---|---|
-| `Hero` | Full-screen banner with banner.jpg, headline, and WhatsApp CTA |
-| `Features` | 3-column guarantee section (Inspected, 7yrs China, 13+ Markets) |
-| `Process` | 4-step sourcing workflow (Consult → Source → Inspect → Logistics) |
-| `Brands` | Animated infinite-scroll marquee of supported EV brands |
-| `LatestFromField` | Photo grid (mobile carousel) pulled from Instagram/TikTok field exports |
-| `MeetFounder` | Founder photo + bio + handwritten signature |
-| `CTA` | Dark gradient section with WhatsApp CTA button |
-| `Footer` | Links + copyright |
+| **Home** | `Hero`, `Features`, `Process`, `Brands`, `LatestFromField`, `MeetFounder`, `CTA`. |
+| **About Us** | `AboutHero`, `OurIdentity`, `WhyChinaLeads`, `ExportMarkets`, `FounderJourney`, `AboutCTA`. |
+| **Services** | `ServicesHero`, `ServicesGrid`, `ServiceCard`, `ServicesCTA`. |
+| **Contact Us** | `ContactHero`, `FeaturesStrip`, `ContactCards`. |
+| **FAQ** | `FaqHero`, `FaqAccordion`, `FaqCTA`. |
+| **Shared** | Common layout components like `Footer`, and `Navbar` (via `ui`). |
 
 ---
 
@@ -92,7 +97,7 @@ npm start
 
 | Technology | Purpose |
 |---|---|
-| [Next.js 15+](https://nextjs.org/) | Framework (App Router) |
+| [Next.js 16.1+](https://nextjs.org/) | Framework (App Router) |
 | [React 19](https://react.dev/) | UI Library |
 | [Tailwind CSS 4](https://tailwindcss.com/) | Styling |
 | [Lucide React](https://lucide.dev/) | Icons |
