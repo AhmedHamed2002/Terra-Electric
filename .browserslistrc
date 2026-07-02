@@ -1,0 +1,8 @@
+# Target modern browsers only — removes legacy JS polyfills (~13 KiB saved)
+# Array.prototype.at, flat, flatMap, Object.fromEntries, Object.hasOwn,
+# String.prototype.trimEnd are all Baseline 2020+ and need no polyfills for these targets.
+
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Safari versions
+last 2 Edge versions
