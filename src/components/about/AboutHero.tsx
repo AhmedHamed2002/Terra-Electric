@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function AboutHero() {
   return (
@@ -21,30 +22,36 @@ export default function AboutHero() {
 
       <div className="container-fluid md:px-10 px-5 mx-auto relative z-10 w-full">
         <div className="max-w-2xl text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            <span className="text-white">About </span>
-            <span className="text-[#0ea5e9] font-serif">Terra Electric</span>
-          </h1>
-          <p className="text-base md:text-lg text-gray-300 mb-8 md:mb-10 max-w-xl leading-relaxed">
-            Terra Electric is a China-based export company. We help international buyers source genuine Chinese electric vehicles — without the markups and risk of middlemen who've never set foot inside a factory.
-          </p>
+          <FadeIn direction="up">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              <span className="text-white">About </span>
+              <span className="text-[#0ea5e9] font-serif">Terra Electric</span>
+            </h1>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.2}>
+            <p className="text-base md:text-lg text-gray-300 mb-8 md:mb-10 max-w-xl leading-relaxed">
+              Terra Electric is a China-based export company. We help international buyers source genuine Chinese electric vehicles — without the markups and risk of middlemen who've never set foot inside a factory.
+            </p>
+          </FadeIn>
           {/* Stats Row */}
-          <div className="flex flex-wrap items-center gap-4 md:gap-12">
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-white">100%</p>
-              <p className="text-gray-400 text-sm mt-1">Innovation Drive</p>
+          <FadeIn direction="up" delay={0.4}>
+            <div className="flex flex-wrap items-center gap-4 md:gap-12">
+              <div>
+                <p className="text-3xl md:text-4xl font-bold text-white">100%</p>
+                <p className="text-gray-400 text-sm mt-1">Innovation Drive</p>
+              </div>
+              <div className="w-px h-12 bg-white/20 hidden sm:block" />
+              <div>
+                <p className="text-3xl md:text-4xl font-bold text-white">13+</p>
+                <p className="text-gray-400 text-sm mt-1">Global Regions</p>
+              </div>
+              <div className="w-px h-12 bg-white/20 hidden sm:block" />
+              <div>
+                <p className="text-3xl md:text-4xl font-bold text-white">7+</p>
+                <p className="text-gray-400 text-sm mt-1">Years in China</p>
+              </div>
             </div>
-            <div className="w-px h-12 bg-white/20 hidden sm:block" />
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-white">13+</p>
-              <p className="text-gray-400 text-sm mt-1">Global Regions</p>
-            </div>
-            <div className="w-px h-12 bg-white/20 hidden sm:block" />
-            <div>
-              <p className="text-3xl md:text-4xl font-bold text-white">7+</p>
-              <p className="text-gray-400 text-sm mt-1">Years in China</p>
-            </div>
-          </div>
+          </FadeIn>
         </div>
       </div>
 

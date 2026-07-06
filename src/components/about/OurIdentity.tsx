@@ -1,7 +1,9 @@
+import FadeIn from "@/components/shared/FadeIn";
+
 export default function OurIdentity() {
   return (
     <section className="py-8 md:pt-10 md:pb-14 bg-white w-full">
-      <div className="container-fluid md:px-10 px-5 mx-auto max-w-4xl text-center">
+      <FadeIn direction="up" className="container-fluid md:px-10 px-5 mx-auto max-w-4xl text-center">
         <p className="text-[#0ea5e9] font-bold tracking-widest text-xs uppercase mb-4">
           OUR IDENTITY
         </p>
@@ -18,7 +20,7 @@ export default function OurIdentity() {
           Every vehicle sold through Terra Electric undergoes a personal inspection by our China-based team.
           We believe that trust is built not by promises, but by proof.
         </p>
-      </div>
+      </FadeIn>
     </section>
   );
 }

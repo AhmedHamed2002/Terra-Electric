@@ -1,5 +1,6 @@
 import { Search, ClipboardCheck, Truck, FileText, Headset, Users } from "lucide-react";
 import ServiceCard from "./ServiceCard";
+import FadeIn from "@/components/shared/FadeIn";
 
 const services = [
   {
@@ -39,7 +40,9 @@ export default function ServicesGrid() {
     <section className="py-20 px-4 max-w-6xl mx-auto bg-slate-50">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (
-          <ServiceCard key={index} {...service} />
+          <FadeIn key={index} direction="up" delay={index * 0.1} className="h-full">
+            <ServiceCard {...service} />
+          </FadeIn>
         ))}
       </div>
     </section>

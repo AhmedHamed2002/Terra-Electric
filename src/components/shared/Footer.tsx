@@ -1,9 +1,10 @@
 import Link from "next/link";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function Footer() {
   return (
     <footer className="bg-[#0b1421] text-gray-400 pt-8 pb-12 w-full">
-      <div className="container-fluid md:px-10 px-5 mx-auto">
+      <FadeIn direction="up" className="container-fluid md:px-10 px-5 mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col items-center md:items-start gap-2">
             <h3 className="text-xl font-bold font-serif  text-white uppercase tracking-wider">
@@ -38,7 +39,7 @@ export default function Footer() {
             <p>Direct Access. Unwavering Excellence.</p>
           </div>
         </div>
-      </div>
+      </FadeIn>
     </footer>
   );
 }

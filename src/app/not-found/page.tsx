@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Home, MessageCircle } from "lucide-react";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function NotFoundPage() {
     return (
@@ -29,45 +30,53 @@ export default function NotFoundPage() {
             </p>
 
             {/* Badge */}
-            <span className="mb-5 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0ea5e9]/50 bg-[#0ea5e9]/30 text-[#074f70] text-xs font-bold uppercase tracking-widest">
-            Error 404 · Page Not Found
-            </span>
+            <FadeIn direction="up">
+              <span className="mb-5 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#0ea5e9]/50 bg-[#0ea5e9]/30 text-[#074f70] text-xs font-bold uppercase tracking-widest">
+              Error 404 · Page Not Found
+              </span>
 
-            {/* Headline */}
-            <h1 className="text-3xl sm:text-5xl font-bold text-[#0d1b2a] leading-tight mb-4" style={{ fontFamily: "serif" }}>
-            Looks Like You&apos;ve<br />
-            <span className="text-[#0c7aac]">Lost the Road.</span>
-            </h1>
+              {/* Headline */}
+              <h1 className="text-3xl sm:text-5xl font-bold text-[#0d1b2a] leading-tight mb-4" style={{ fontFamily: "serif" }}>
+              Looks Like You&apos;ve<br />
+              <span className="text-[#0c7aac]">Lost the Road.</span>
+              </h1>
+            </FadeIn>
 
-            <p className="text-gray-950 text-sm sm:text-base max-w-sm mb-10 leading-relaxed">
-            The page you&apos;re looking for doesn&apos;t exist or has been moved. Let&apos;s get you back on track.
-            </p>
+            <FadeIn direction="up" delay={0.2}>
+              <p className="text-gray-950 text-sm sm:text-base max-w-sm mb-10 leading-relaxed mx-auto text-center">
+              The page you&apos;re looking for doesn&apos;t exist or has been moved. Let&apos;s get you back on track.
+              </p>
+            </FadeIn>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Link
-                href="/"
-                className="inline-flex items-center gap-2 bg-[#096996] hover:bg-[#1574a7] text-white font-semibold px-7 py-3 rounded-full transition-all duration-300 shadow-lg shadow-[#0ea5e9]/20 hover:-translate-y-0.5"
-            >
-                <Home className="w-4 h-4" />
-                Back to Home
-            </Link>
+            <FadeIn direction="up" delay={0.4}>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                  href="/"
+                  className="inline-flex items-center gap-2 bg-[#096996] hover:bg-[#1574a7] text-white font-semibold px-7 py-3 rounded-full transition-all duration-300 shadow-lg shadow-[#0ea5e9]/20 hover:-translate-y-0.5"
+              >
+                  <Home className="w-4 h-4" />
+                  Back to Home
+              </Link>
 
-            <Link
-                href="https://wa.me/+8619924554911"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-[#0d1b2a]/20 hover:border-[#0d1b2a]/40 text-[#0d1b2a] font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5"
-            >
-                <MessageCircle className="w-4 h-4" />
-                Speak to an Expert
-            </Link>
-            </div>
+              <Link
+                  href="https://wa.me/+8619924554911"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-[#0d1b2a]/20 hover:border-[#0d1b2a]/40 text-[#0d1b2a] font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5"
+              >
+                  <MessageCircle className="w-4 h-4" />
+                  Speak to an Expert
+              </Link>
+              </div>
+            </FadeIn>
 
             {/* Branding footer */}
-            <p className="mt-14 text-xs uppercase tracking-[0.3em] text-[#0d1b2a]/80 font-medium">
-            Terra Electric · Direct Access · Unwavering Excellence
-            </p>
+            <FadeIn direction="up" delay={0.6}>
+              <p className="mt-14 text-xs uppercase tracking-[0.3em] text-[#0d1b2a]/80 font-medium">
+              Terra Electric · Direct Access · Unwavering Excellence
+              </p>
+            </FadeIn>
         </div>
         </main>
     );

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { PlayCircle, Settings, Instagram, CheckCircle2, Video, Facebook } from "lucide-react";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function LatestFromField() {
   const items = [
@@ -36,19 +37,18 @@ export default function LatestFromField() {
   return (
     <section className="py-16 md:py-24 bg-white w-full">
       <div className="container-fluid md:px-10 px-5 mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif text-[#0d1b2a] mb-4">
-          Latest From the Field
-        </h2>
-        <p className="text-gray-600 max-w-3xl mb-12">
-          Real exports complete with photos from port logistics... No stock photos merely.
-        </p>
+        <FadeIn direction="up">
+          <h2 className="text-3xl md:text-4xl font-bold font-serif text-[#0d1b2a] mb-4">
+            Latest From the Field
+          </h2>
+          <p className="text-gray-600 max-w-3xl mb-12">
+            Real exports complete with photos from port logistics... No stock photos merely.
+          </p>
+        </FadeIn>
 
         <div className="flex overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pb-6 sm:pb-0 snap-x snap-mandatory hide-scrollbar -mx-5 px-5 sm:mx-0 sm:px-0">
           {items.map((item, index) => (
-            <div
-              key={index}
-              className="relative w-[75vw] sm:w-full shrink-0 sm:shrink aspect-3/4 rounded-lg overflow-hidden group shadow-md cursor-pointer snap-center"
-            >
+            <FadeIn key={index} direction="up" delay={index * 0.1} className="w-[75vw] sm:w-full shrink-0 sm:shrink aspect-3/4 snap-center relative rounded-lg overflow-hidden group shadow-md cursor-pointer">
               <Image
                 src={item.src}
                 alt={`Field export ${index + 1}`}
@@ -85,7 +85,7 @@ export default function LatestFromField() {
                   {item.description}
                 </p>
               </div>
-            </div>
+            </FadeIn>
           ))}
         </div>
 

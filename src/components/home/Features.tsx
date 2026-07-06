@@ -1,4 +1,5 @@
 import { ShieldCheck, MapPin, Globe } from "lucide-react";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function Features() {
   const features = [
@@ -24,7 +25,7 @@ export default function Features() {
       <div className="container-fluid md:px-10 px-5 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
           {features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-center text-center group">
+            <FadeIn key={index} direction="up" delay={index * 0.1} className="flex flex-col items-center text-center group">
               <div className="bg-gray-50 p-4 rounded-full mb-6 text-[#1a365d] border border-gray-100 group-hover:scale-110 group-hover:text-[#13526c] group-hover:border-[#13526c] transition-all duration-300">
                 {feature.icon}
               </div>
@@ -32,7 +33,7 @@ export default function Features() {
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 {feature.description}
               </p>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>

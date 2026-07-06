@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function Hero() {
   return (
@@ -23,33 +24,39 @@ export default function Hero() {
 
       <div className="container-fluid md:px-10 px-5 mx-auto relative z-10 w-full">
         <div className="max-w-2xl text-white">
-          <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold font-serif leading-tight mb-5 md:mb-6">
-            Terra Electric — Your Direct Line to <span className="text-[#0ea5e9]">Chinese Electric Vehicles</span>
-          </h1>
-          <p className="text-base md:text-xl text-gray-200 mb-10 md:mb-8 max-w-xl">
-            We eliminate the middleman. We handle sourcing, comprehensive quality inspection, document handling, and logistics for international buyers.
-          </p>
+          <FadeIn direction="up">
+            <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold font-serif leading-tight mb-5 md:mb-6">
+              Terra Electric — Your Direct Line to <span className="text-[#0ea5e9]">Chinese Electric Vehicles</span>
+            </h1>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.2}>
+            <p className="text-base md:text-xl text-gray-200 mb-10 md:mb-8 max-w-xl">
+              We eliminate the middleman. We handle sourcing, comprehensive quality inspection, document handling, and logistics for international buyers.
+            </p>
+          </FadeIn>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <Link
-              href="https://wa.me/+8619924554911"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#13526c] hover:bg-[#176a88] text-white px-6 py-3 rounded-md font-medium transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              <span>Message on WhatsApp</span>
-            </Link>
-            
-            <div className="flex items-center gap-2 text-white/90">
-              <div className="bg-white/20 p-2 rounded-full backdrop-blur-sm">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+          <FadeIn direction="up" delay={0.4}>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <Link
+                href="https://wa.me/+8619924554911"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#13526c] hover:bg-[#176a88] text-white px-6 py-3 rounded-md font-medium transition-colors"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span>Message on WhatsApp</span>
+              </Link>
+              
+              <div className="flex items-center gap-2 text-white/90">
+                <div className="bg-white/20 p-2 rounded-full backdrop-blur-sm">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <span className="font-medium whitespace-pre-line">100% L/C Working</span>
               </div>
-              <span className="font-medium whitespace-pre-line">100% L/C Working</span>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </div>
       

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Play } from "lucide-react";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function MeetFounder() {
   return (
     <section className="py-12 md:py-24 bg-gray-50 w-full">
       <div className="container md:px-10 px-5 mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-5 md:gap-6">
-          <div className="w-full md:w-1/2 relative">
+          <FadeIn direction="right" className="w-full md:w-1/2 relative">
             <div className="relative w-full aspect-4/5 md:aspect-square max-w-md mx-auto md:mx-0 rounded-xl overflow-hidden shadow-2xl">
               <Image
                 src="/assets/images/Mahmoud.png"
@@ -19,9 +20,9 @@ export default function MeetFounder() {
             </div>
             {/* Decorative block behind image */}
             <div className="absolute -bottom-4 -left-4 w-2/3 h-2/3 bg-[#1a365d] rounded-xl -z-10 hidden md:block"></div>
-          </div>
+          </FadeIn>
           
-          <div className="w-full md:w-1/2">
+          <FadeIn direction="left" delay={0.2} className="w-full md:w-1/2">
             <p className="text-[#0369a1] font-bold tracking-widest text-sm uppercase mb-3">
               OUR TRACK RECORD
             </p>
@@ -51,7 +52,7 @@ export default function MeetFounder() {
             </div>
 
 
-          </div>
+          </FadeIn>
         </div>
       </div>
     </section>

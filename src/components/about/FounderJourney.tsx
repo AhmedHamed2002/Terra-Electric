@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function FounderJourney() {
   return (
@@ -7,7 +8,7 @@ export default function FounderJourney() {
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
 
           {/* Image Side */}
-          <div className="w-full md:w-1/2 relative">
+          <FadeIn direction="right" className="w-full md:w-1/2 relative">
             <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/assets/images/Mahmoud.png"
@@ -18,10 +19,10 @@ export default function FounderJourney() {
               {/* Decorative block */}
               <div className="absolute -bottom-4 -left-4 w-2/3 h-2/3 bg-[#0ea5e9]/10 rounded-xl -z-10 hidden md:block border border-[#0ea5e9]/20" />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Text Side */}
-          <div className="w-full md:w-1/2">
+          <FadeIn direction="left" delay={0.2} className="w-full md:w-1/2">
             <p className="text-[#0ea5e9] font-bold tracking-widest text-xs uppercase mb-3">
               FOUNDER&apos;S VISION
             </p>
@@ -55,7 +56,7 @@ export default function FounderJourney() {
             </blockquote>
 
             <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
-          </div>
+          </FadeIn>
         </div>
       </div>
     </section>

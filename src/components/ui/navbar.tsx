@@ -11,7 +11,15 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu, Home, Info, Phone, Award, ArrowRight, HelpCircle } from "lucide-react";
+import {
+  Menu,
+  Home,
+  Info,
+  Phone,
+  Award,
+  ArrowRight,
+  HelpCircle,
+} from "lucide-react";
 
 /* ---------------- Navbar ---------------- */
 export default function Navbar() {
@@ -29,11 +37,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isTransparent = pathname === "/" || pathname === "/about-us" || pathname === "/services";
-  
+  const isTransparent =
+    pathname === "/" || pathname === "/about-us" || pathname === "/services";
+
   /* -------- Active link -------- */
   const isActive = (path: string) =>
-      isTransparent
+    isTransparent
       ? pathname === path
         ? "text-white font-bold pb-1 "
         : "text-gray-200 font-normal hover:text-gray-50"
@@ -41,13 +50,13 @@ export default function Navbar() {
         ? `font-bold pb-1 ${isScrolled ? "text-white" : "text-[#23a4e1]"}`
         : `${isScrolled ? "text-gray-200 font-normal hover:text-gray-50" : "text-gray-700 hover:text-[#1773cf]"}`;
 
-    const navBgColor = isTransparent
-      ? isScrolled
-        ? "bg-[#0b1421]/90"
-        : "bg-transparent"
-      : isScrolled
-        ? "bg-[#0b1421]/90"
-        : "bg-white";
+  const navBgColor = isTransparent
+    ? isScrolled
+      ? "bg-[#0b1421]/90"
+      : "bg-transparent"
+    : isScrolled
+      ? "bg-[#0b1421]/90"
+      : "bg-white";
 
   return (
     <nav
@@ -125,7 +134,9 @@ export default function Navbar() {
               variant="outline"
               className={`cursor-pointer ${isTransparent ? (isScrolled ? "text-white! bg-[#1e9bd4d1] border-0 hover:bg-[#207fb8]! " : "text-white! bg-[#102741] border-0 hover:bg-[#16365b]!") : isScrolled ? "text-white! bg-[#1e9bd4d1] border-0 hover:bg-[#207fb8]!" : "text-white! bg-[#102741] border-0 hover:bg-[#16365b]! "}`}
             >
-              <span className="text-xs md:text-base font-serif">Contact Us</span>
+              <span className="text-xs md:text-base font-serif">
+                Contact Us
+              </span>
               <ArrowRight className="h-6 w-6 mt-0.5 hidden md:block" />
             </Button>
           </Link>
@@ -159,7 +170,9 @@ export default function Navbar() {
                           className="h-7 w-auto object-contain"
                           priority
                         />
-                        <span className={`text-xs ms-2 tracking-widest text-[#132648] uppercase font-medium font-serif`}>
+                        <span
+                          className={`text-xs ms-2 tracking-widest text-[#132648] uppercase font-medium font-serif`}
+                        >
                           Terra Electric
                         </span>
                       </div>

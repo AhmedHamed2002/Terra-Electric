@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, MapPin, Youtube, Instagram, Facebook } from "lucide-react";
 import Link from "next/link";
+import FadeIn from "@/components/shared/FadeIn";
 
 const WhatsappIcon = ({ className }: { className?: string }) => (
   <svg
@@ -19,7 +20,7 @@ export default function ContactCards() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         
         {/* Main WhatsApp Card */}
-        <div className="lg:col-span-7 bg-[#0b1421] rounded-xl p-8 md:p-10 text-white relative overflow-hidden flex flex-col justify-between min-h-[350px]">
+        <FadeIn direction="up" className="lg:col-span-7 bg-[#0b1421] rounded-xl p-8 md:p-10 text-white relative overflow-hidden flex flex-col justify-between min-h-[350px]">
           <div className="relative z-10">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#93cbf9] ">Connect on WhatsApp</h2>
             <p className="text-slate-300 text-base md:text-lg max-w-[350px] leading-relaxed">
@@ -41,10 +42,10 @@ export default function ContactCards() {
               <path d="M20 2H4C2.9 2 2.01 2.9 2.01 4L2 22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" />
             </svg>
           </div>
-        </div>
+        </FadeIn>
 
         {/* Right column - Shenzhen HQ Card */}
-        <div className="lg:col-span-5 flex flex-col gap-6">
+        <FadeIn direction="up" delay={0.2} className="lg:col-span-5 flex flex-col gap-6">
           <div className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden flex flex-col h-full">
             <div className="relative h-44 w-full">
               <Image 
@@ -73,10 +74,10 @@ export default function ContactCards() {
               </a>
             </div>
           </div>
-        </div>
+        </FadeIn>
 
         {/* Bottom Left Card (Socials) */}
-        <div className="lg:col-span-6 bg-[#f4f4f5] rounded-xl px-6 py-3 flex flex-col justify-center">
+        <FadeIn direction="up" delay={0.4} className="lg:col-span-6 bg-[#f4f4f5] rounded-xl px-6 py-3 flex flex-col justify-center">
           <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-4 block">Follow Our Ecosystem</span>
           <div className="grid grid-cols-2 gap-3">
             <a href="https://wa.me/8619924554911" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl py-2.5 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow group">
@@ -96,10 +97,10 @@ export default function ContactCards() {
               <span className="text-[11px] font-bold text-slate-900">YouTube</span>
             </a>
           </div>
-        </div>
+        </FadeIn>
 
         {/* Bottom Right Card (Consulting) */}
-        <div className="lg:col-span-6 bg-white rounded-xl p-8 border border-slate-100 shadow-[0_2px_15px_-5px_rgba(0,0,0,0.05)] flex flex-col justify-center relative overflow-hidden">
+        <FadeIn direction="up" delay={0.6} className="lg:col-span-6 bg-white rounded-xl p-8 border border-slate-100 shadow-[0_2px_15px_-5px_rgba(0,0,0,0.05)] flex flex-col justify-center relative overflow-hidden">
           <div className="flex items-center text-[#22d3ee] mb-4">
             <div className="w-1.5 h-1.5 rounded-full bg-[#22d3ee] mr-2 shadow-[0_0_8px_#22d3ee]"></div>
             <span className="text-xs font-bold tracking-wider">Sourcing Active</span>
@@ -112,10 +113,10 @@ export default function ContactCards() {
               <Image src="/assets/images/Mahmoud.png" alt="Consultant" fill className="object-cover  md:grayscale md:hover:grayscale-0 transition-all duration-300" />
             </div>
           </div>
-        </div>
+        </FadeIn>
 
         {/* Map Section */}
-        <div className="lg:col-span-12 rounded-xl overflow-hidden shadow-sm mt-2 border border-slate-100">
+        <FadeIn direction="up" delay={0.8} className="lg:col-span-12 rounded-xl overflow-hidden shadow-sm mt-2 border border-slate-100">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3685.2852041503415!2d113.9033945!3d22.5309866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403eef4bc7f190f%3A0x13e02e9f97c78fcf!2sQianhai%20Zhuoyue%20Financial%20Center%20Parking%20Lot!5e0!3m2!1sar!2seg!4v1782962376395!5m2!1sar!2seg" 
             className="w-full h-[450px]" 
@@ -124,7 +125,7 @@ export default function ContactCards() {
             loading="lazy" 
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
-        </div>
+        </FadeIn>
 
       </div>
     </section>

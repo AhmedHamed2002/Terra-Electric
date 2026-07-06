@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Zap } from "lucide-react";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function WhyChinaLeads() {
   const reasons = [
@@ -15,7 +16,7 @@ export default function WhyChinaLeads() {
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
 
           {/* Text Side */}
-          <div className="w-full md:w-1/2 text-white">
+          <FadeIn direction="right" className="w-full md:w-1/2 text-white">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-lg bg-[#0ea5e9]/10 border border-[#0ea5e9]/20">
                 <Zap className="w-5 h-5 text-[#0ea5e9]" />
@@ -35,10 +36,10 @@ export default function WhyChinaLeads() {
                 </li>
               ))}
             </ul>
-          </div>
+          </FadeIn>
 
           {/* Image Side */}
-          <div className="w-full md:w-1/2">
+          <FadeIn direction="left" delay={0.2} className="w-full md:w-1/2">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40">
               <Image
                 src="/assets/images/why_china_leads.png"
@@ -56,7 +57,7 @@ export default function WhyChinaLeads() {
                 </p>
               </div>
             </div>
-          </div>
+          </FadeIn>
 
         </div>
       </div>

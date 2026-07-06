@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FadeIn from "@/components/shared/FadeIn";
 
 export default function ServicesHero() {
   return (
@@ -17,16 +18,20 @@ export default function ServicesHero() {
         <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#0f172a]/80"></div>
       </div>
       <div className="relative z-10 max-w-4xl px-4 flex flex-col items-center">
-        <h1 className="text-2xl md:text-5xl font-sebold mb-6 tracking-tight font-serif text-white drop-shadow-md">
-          Comprehensive EV Import
-          <br />
-          Services
-        </h1>
-        <p className="text-base md:text-xl text-slate-200 font-light max-w-2xl mx-auto drop-shadow">
-          From initial sourcing in China to final delivery at your doorstep,
-          Terra Electric manages every aspect of your EV transition with
-          technical precision.
-        </p>
+        <FadeIn direction="up">
+          <h1 className="text-2xl md:text-5xl font-sebold mb-6 tracking-tight font-serif text-white drop-shadow-md">
+            Comprehensive EV Import
+            <br />
+            Services
+          </h1>
+        </FadeIn>
+        <FadeIn direction="up" delay={0.2}>
+          <p className="text-base md:text-xl text-slate-200 font-light max-w-2xl mx-auto drop-shadow">
+            From initial sourcing in China to final delivery at your doorstep,
+            Terra Electric manages every aspect of your EV transition with
+            technical precision.
+          </p>
+        </FadeIn>
       </div>
 
       {/* Decorative wave at the bottom */}
