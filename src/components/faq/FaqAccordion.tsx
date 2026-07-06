@@ -31,7 +31,7 @@ const faqs = [
 
 export default function FaqAccordion() {
   return (
-    <section className="px-4 pb-20 pt-10 max-w-7xl mx-auto w-full relative z-10">
+    <section className="px-4 pb-20 pt-10 md:max-w-7xl mx-auto w-full relative z-10">
       <FadeIn direction="up">
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqs.map((faq, index) => (

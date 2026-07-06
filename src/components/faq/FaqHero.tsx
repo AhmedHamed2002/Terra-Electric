@@ -7,7 +7,9 @@ export default function FaqHero() {
     <section className="pt-20 md:pt-26 pb-16 px-4 md:px-8 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left Content */}
-        <FadeIn direction="right" className="flex flex-col items-start relative z-10">
+        <FadeIn direction="right">
+          
+        <div className="flex flex-col items-start relative z-10">
           <div className="text-[#d6eef4] bg-[#23a4e1]/95 text-[10px] font-serif font-bold tracking-widest pb-1.5 pt-2 px-4 rounded-full mb-4 md:mb-6 uppercase shadow-sm">
             Support Center
           </div>
@@ -18,10 +20,11 @@ export default function FaqHero() {
           <p className="text-slate-600 text-base md:text-lg max-w-md">
             Everything you need to know about sourcing world-class electric vehicles directly from the source. Our process is transparent, expert-led, and centered around direct communication.
           </p>
+        </div>
         </FadeIn>
 
         {/* Right Content - Image with Overlay */}
-        <FadeIn direction="left" delay={0.2} className="relative -mt-4 md:mt-2 lg:mt-0">
+        <div className="relative -mt-4 md:mt-2 lg:mt-0">
           <div className="relative h-[350px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image 
               src="/assets/images/faq_banner.png" 
@@ -45,7 +48,7 @@ export default function FaqHero() {
               Expert logistics for every EV model.
             </p>
           </div>
-        </FadeIn>
+        </div>
       </div>
     </section>
   );
