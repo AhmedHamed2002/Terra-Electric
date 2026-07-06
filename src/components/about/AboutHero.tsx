@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 
 export default function AboutHero() {
   return (
-    <section className="relative w-full min-h-[60vh] md:min-h-[80vh] flex items-center">
+    <section className="relative w-full min-h-[72vh] md:min-h-[80vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -21,15 +21,15 @@ export default function AboutHero() {
 
       <div className="container-fluid md:px-10 px-5 mx-auto relative z-10 w-full">
         <div className="max-w-2xl text-white">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             <span className="text-white">About </span>
             <span className="text-[#0ea5e9] font-serif">Terra Electric</span>
           </h1>
-          <p className="text-base md:text-lg text-gray-300 mb-10 max-w-xl leading-relaxed">
+          <p className="text-base md:text-lg text-gray-300 mb-8 md:mb-10 max-w-xl leading-relaxed">
             Terra Electric is a China-based export company. We help international buyers source genuine Chinese electric vehicles — without the markups and risk of middlemen who've never set foot inside a factory.
           </p>
           {/* Stats Row */}
-          <div className="flex flex-wrap items-center gap-8 md:gap-12">
+          <div className="flex flex-wrap items-center gap-4 md:gap-12">
             <div>
               <p className="text-3xl md:text-4xl font-bold text-white">100%</p>
               <p className="text-gray-400 text-sm mt-1">Innovation Drive</p>

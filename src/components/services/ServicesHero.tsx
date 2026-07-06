@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ServicesHero() {
   return (
-    <section className="relative w-full min-h-[55vh] md:min-h-[70vh] flex items-center justify-center text-white text-center overflow-hidden">
+    <section className="relative w-full min-h-[57vh] md:min-h-[70vh] flex items-center justify-center text-white text-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/assets/images/service_banner.png"
@@ -17,12 +17,12 @@ export default function ServicesHero() {
         <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#0f172a]/80"></div>
       </div>
       <div className="relative z-10 max-w-4xl px-4 flex flex-col items-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight font-serif text-white drop-shadow-md">
+        <h1 className="text-2xl md:text-5xl font-sebold mb-6 tracking-tight font-serif text-white drop-shadow-md">
           Comprehensive EV Import
           <br />
           Services
         </h1>
-        <p className="text-lg md:text-xl text-slate-200 font-light max-w-2xl mx-auto leading-relaxed drop-shadow">
+        <p className="text-base md:text-xl text-slate-200 font-light max-w-2xl mx-auto drop-shadow">
           From initial sourcing in China to final delivery at your doorstep,
           Terra Electric manages every aspect of your EV transition with
           technical precision.

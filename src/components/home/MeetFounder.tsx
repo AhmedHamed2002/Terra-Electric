@@ -22,7 +22,7 @@ export default function MeetFounder() {
           </div>
           
           <div className="w-full md:w-1/2">
-            <p className="text-[#0ea5e9] font-bold tracking-widest text-sm uppercase mb-3">
+            <p className="text-[#0369a1] font-bold tracking-widest text-sm uppercase mb-3">
               OUR TRACK RECORD
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-[#0d1b2a] mb-6">
@@ -47,7 +47,7 @@ export default function MeetFounder() {
               >
                 Mahmoud
               </span>
-              <span className="text-xs uppercase tracking-widest text-gray-400 pl-1">Founder, Terra Electric</span>
+              <span className="text-xs uppercase tracking-widest text-gray-500 pl-1">Founder, Terra Electric</span>
             </div>
 
 

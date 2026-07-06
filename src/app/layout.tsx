@@ -115,13 +115,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${playfair.variable} ${leckerliOne.variable} ${dancingScript.variable}`}
     >
       <head>
-        {/* Preload the LCP hero image so the browser fetches it ASAP */}
-        <link
-          rel="preload"
-          as="image"
-          href="/assets/images/banner.png"
-          fetchPriority="high"
-        />
       </head>
       <body
         suppressHydrationWarning

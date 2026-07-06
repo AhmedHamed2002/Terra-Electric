@@ -26,7 +26,7 @@ const socialLinks = [
   {
     name: "Facebook",
     Icon: Facebook,
-    url: "https://www.facebook.com/profile.php?id=100094682284917",
+    url: "https://www.facebook.com/profile.php?id=61591526527313",
     color: "bg-[#1877F2] hover:bg-[#165bd0]",
   },
   {

@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] xl:min-h-[97vh] flex items-center">
+    <section className="relative w-full min-h-[82vh] md:min-h-[80vh] lg:min-h-[90vh] xl:min-h-[97vh] flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -23,10 +23,10 @@ export default function Hero() {
 
       <div className="container-fluid md:px-10 px-5 mx-auto relative z-10 w-full">
         <div className="max-w-2xl text-white">
-          <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold font-serif leading-tight mb-10 md:mb-6">
+          <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold font-serif leading-tight mb-5 md:mb-6">
             Terra Electric — Your Direct Line to <span className="text-[#0ea5e9]">Chinese Electric Vehicles</span>
           </h1>
-          <p className="text-base md:text-xl text-gray-200 mb-12 md:mb-8 max-w-xl">
+          <p className="text-base md:text-xl text-gray-200 mb-10 md:mb-8 max-w-xl">
             We eliminate the middleman. We handle sourcing, comprehensive quality inspection, document handling, and logistics for international buyers.
           </p>
 

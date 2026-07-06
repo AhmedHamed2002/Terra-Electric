@@ -1,5 +1,7 @@
 /* Google Fonts are now loaded via next/font/google in layout.tsx (self-hosted, preloaded, non-blocking) */
 @import "tailwindcss";
+@source "../";          /* scan src/ only — prevents node_modules / .next over-scanning */
+@source not "../components/ui/sidebar.tsx"; /* unused shadcn component — exclude to trim CSS output */
 
 @layer base {
   html {

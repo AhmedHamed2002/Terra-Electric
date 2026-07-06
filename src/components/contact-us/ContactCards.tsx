@@ -83,7 +83,7 @@ export default function ContactCards() {
               <WhatsappIcon className="w-6 h-6 text-slate-700 mb-2 group-hover:text-green-500 transition-colors" />
               <span className="text-[11px] font-bold text-slate-900">WhatsApp</span>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100094682284917" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl py-2.5 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow group">
+            <a href="https://www.facebook.com/profile.php?id=61591526527313" target="_blank" rel="noopener noreferrer" className="bg-white rounded-xl py-2.5 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow group">
               <Facebook className="w-6 h-6 text-slate-700 mb-2 group-hover:text-blue-600 transition-colors" />
               <span className="text-[11px] font-bold text-slate-900">Facebook</span>
             </a>
