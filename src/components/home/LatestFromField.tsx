@@ -76,7 +76,7 @@ export default function LatestFromField() {
               </div>
 
               {/* Bottom text content */}
-              <div className="absolute bottom-0 left-0 w-full p-5 flex flex-col justify-end translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-75">
+              <div className="bg-linear-to-t from-black/55 via-black/20 to-transparent absolute bottom-0 left-0 w-full p-5 flex flex-col justify-end translate-y-0 opacity-100 md:translate-y-4 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-300 delay-75">
                 <div className="flex items-center gap-2 text-white font-bold mb-2">
                   {item.icon}
                   <span className="text-sm tracking-wide">{item.title}</span>
