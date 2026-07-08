@@ -3,12 +3,11 @@ import FadeIn from "@/components/shared/FadeIn";
 export default function Brands() {
   const brands = [
     "BYD",
-    "NIO",
-    "XPENG",
-    "LI AUTO",
-    "ZEEKR",
-    "CHANGAN",
-    "GEELY",
+    "MG",
+    "Chery",
+    "Geely",
+    "Changan",
+    "Leapmotor",
   ];
 
   return (

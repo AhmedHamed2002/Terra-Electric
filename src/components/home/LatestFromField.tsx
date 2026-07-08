@@ -42,8 +42,7 @@ export default function LatestFromField() {
             Latest From the Field
           </h2>
           <p className="text-gray-600 max-w-3xl mb-12">
-            Real exports complete with photos from port logistics... No stock photos merely.
-          </p>
+            Real inspection photos and videos, pulled live from our Instagram/facebook — not uploaded manually.          </p>
         </FadeIn>
 
         <div className="flex overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pb-6 sm:pb-0 snap-x snap-mandatory hide-scrollbar -mx-5 px-5 sm:mx-0 sm:px-0">
